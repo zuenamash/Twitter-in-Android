@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/imgPic"
+        android:layout_width="96dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lady" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="146dp"
+        android:layout_height="37dp"
+        tools:text="Zuenah Macharia"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toEndOf="@+id/imgPic"
+        app:layout_constraintTop_toTopOf="@+id/imgPic" />
+
+    <TextView
+        android:id="@+id/tvMail"
+        android:layout_width="140dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="172dp"
+        tools:text="#@Mobiledev"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgPic"
+        app:layout_constraintTop_toTopOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvTweet"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Creating apps that are interactive is so cool thus being a mobile developer is the best thing  and I love it."
+        android:textColor="#171414"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imgPic"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgRetweet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgRetweet"
+        app:layout_constraintTop_toTopOf="@+id/imgRetweet"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="?attr/actionModeShareDrawable" />
+
+    <ImageView
+        android:id="@+id/imgRetweet"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgLike"
+        app:layout_constraintStart_toEndOf="@+id/imgLike"
+        app:layout_constraintTop_toTopOf="@+id/imgLike"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_repeat_one_24" />
+
+    <ImageView
+        android:id="@+id/imgLike"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgtext"
+        app:layout_constraintStart_toEndOf="@+id/imgtext"
+        app:layout_constraintTop_toTopOf="@+id/imgtext"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+    <ImageView
+        android:id="@+id/imgtext"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+        app:srcCompat="@drawable/ic_baseline_textsms_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
